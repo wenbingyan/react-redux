@@ -1,15 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import Counter from './components/Counter'
-import Todo from './components/Todo'
-import {Provider} from 'react-redux'
-import store from './store'
+import App from './components/App'
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.render((
-  <Provider store={store}>
   <div className='box'>
-      <Counter />
-      <Todo />
+      <App />
     </div>
-  </Provider>
 ), document.getElementById('root'))
